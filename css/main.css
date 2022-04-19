@@ -1,0 +1,107 @@
+/* 공통 */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper__inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper__inner section.container img {
+  width: 90%;
+  height: 90%;
+
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 11%;
+  color: rgba(203, 206, 33, .6);
+}
+
+.swiper-button-prev {
+  position: absolute;
+  color: rgba(203, 206, 33, .6);
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.header {
+  position: fixed;
+  width: 90%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  background-color: #0f036ec2;
+  display: flex;
+  z-index: 2;
+}
+
+.header-inner {
+  display: flex;
+}
+
+.side-bar {
+  position: absolute;
+  width: 10%;
+  height: 90%;
+  right: 0;
+  bottom: 0;
+  background-color: bisque;
+}
+
+.header-logo {
+  position: absolute;
+  right: 0;
+  width: 10%;
+  height: 10%;
+  background-color: aqua;
+}
+
+/* 한국 */
+.korea {}
+
+
+.korea__header {}
+
+
+.korea__header-inner {}
+
+
+
+
+
+section.container {
+  display: flex;
+}
+
+
+/* 일본 */
+.japan {}
+
+
+
+/* 미국 */
+.usa {}
+
+/* 캐나다 */
+.canada {}
+
+/* 프랑스 */
+.france {}
