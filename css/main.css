@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 /* 공통 */
 html,
 body {
   position: relative;
   height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 body {
@@ -22,6 +29,8 @@ body {
 }
 
 .swiper__inner section.container img {
+  position: absolute;
+  top: 10%;
   width: 90%;
   height: 90%;
 
@@ -40,17 +49,6 @@ body {
 
 .swiper-pagination {
   position: absolute;
-}
-
-.header {
-  position: fixed;
-  width: 90%;
-  height: 10%;
-  top: 0;
-  left: 0;
-  background-color: #0f036ec2;
-  display: flex;
-  z-index: 2;
 }
 
 .header-inner {
@@ -72,6 +70,106 @@ body {
   width: 10%;
   height: 10%;
   background-color: aqua;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  width: 90%;
+  height: 10%;
+  top: 0;
+  left: 0;
+  background-color: #0f036ec2;
+  display: flex;
+  z-index: 2;
+  font-family: 'Nanum Pen Script', cursive;
+  color: #fff;
+}
+
+.header .title {
+  width: 100px;
+  height: 10%;
+  position: absolute;
+  display: flex;
+  left: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* HEADER__MAIN-MENU*/
+.header ul.header-main-menu {
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  width: 1000px;
+  height: 60px;
+  left: 200px;
+}
+
+.header ul.header-main-menu li h2 {
+  display: block;
+  width: 85px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header ul.header-main-menu li ul.header-main-menu-text {
+  display: none
+}
+
+.header ul.header-main-menu li:hover ul.header-main-menu-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: -195px;
+  top: 60px;
+  width: 112%;
+  height: 60px;
+  background-color: #000;
+}
+
+.header ul.header-main-menu li:hover ul.header-main-menu-text li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header ul.header-main-menu li:hover ul.header-main-menu-text li:first-child {
+  margin-left: 0;
+}
+
+.header ul.header-main-menu header-main-menu-text li {}
+
+/* HEADER__SUB-MENU */
+
+.header .sub-menu-container {}
+
+.header .sub-menu-container ul.sub-menu {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.header .sub-menu-container ul.sub-menu li {
+  margin-left: 10px;
+}
+
+.header .sub-menu-container ul.sub-menu li a {
+  color: #fff;
+}
+
+.header .sub-menu-container ul.sub-menu li a:hover {
+  cursor: pointer;
+}
+.header .sub-menu-container ul.sub-menu li::before {
+  content: " | ";
+  color: #000;
+}
+
+.header .sub-menu-container ul.sub-menu li:first-child::before  {
+  content: none;
 }
 
 /* 한국 */
